@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function Privacy() {
   return (
-    <main className="legal-page">
+    <main className="legal-page" id="main-content">
       <Link className="back-link" href="/">← Back to LeucineLockDX</Link>
       <p className="eyebrow">Your information</p>
       <h1>Privacy</h1>

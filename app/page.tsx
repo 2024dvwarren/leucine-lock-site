@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { Footer, Header, Molecule } from './components';
 
 export default function Home() {
-  return <main><Header/>
+  return <main id="main-content"><Header/>
     <section className="hero">
       <div className="heroGlow"/><div className="heroCopy"><p className="eyebrow">A programmable biosensor platform</p><h1>Fast answers.<br/><span>Amplified by design.</span></h1><p className="lead">Leucine Lock DX is developing biosensors that combine target-specific recognition with enzyme-powered signal amplification—designed to preserve sensitivity while delivering practical results in minutes.</p><div className="actions"><Link className="button primary" href="/technology">See how it works <span>→</span></Link><a className="button ghost" href="mailto:brian@diagnosticventures.net?subject=Leucine%20Lock%20DX%20partnership">Discuss a partnership</a></div></div>
       <Molecule/>

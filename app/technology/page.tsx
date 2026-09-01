@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { Footer, Header, Molecule } from '../components';
 export const metadata: Metadata = { title: 'Technology', description: 'How the Leucine Lock biosensor platform converts target recognition into an amplified, flexible diagnostic readout.' };
 
-export default function Technology() { return <main><Header/>
+export default function Technology() { return <main id="main-content"><Header/>
   <section className="pageHero techHero"><div><p className="eyebrow">Technology</p><h1>A molecular switch for faster, more sensitive biosensing.</h1><p className="lead">Leucine Lock is a modular biosensor concept: recognition chemistry finds the target, a controlled molecular interaction activates the system, and an enzyme-linked response amplifies the signal.</p></div><Molecule compact/></section>
   <section className="mechanism section"><div className="sectionIntro"><p className="eyebrow">The mechanism</p><h2>Four engineered layers. One readable answer.</h2></div><div className="mechanismRows">
     <article><span>01</span><div><h3>Target-specific recognition</h3><p>A single-chain variable fragment (scFv)—an engineered antibody fragment—provides the target recognition layer. Changing that recognition element allows the architecture to be adapted for different analytes.</p></div></article>

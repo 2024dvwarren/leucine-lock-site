@@ -1,7 +1,47 @@
+'use client';
+
 import Link from 'next/link';
+import { useState } from 'react';
+
+const inquiryUrl =
+  'mailto:brian@diagnosticventures.net?subject=Leucine%20Lock%20DX%20inquiry';
 
 export function Header() {
-  return <header className="header"><Link className="wordmark" href="/">LEUCINE LOCK <b>DX</b></Link><nav aria-label="Primary navigation"><Link href="/technology">Technology</Link><Link href="/team">Team</Link><a className="navCta" href="mailto:brian@diagnosticventures.net?subject=Leucine%20Lock%20DX%20inquiry">Contact us</a></nav></header>;
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  function closeMenu() {
+    setMenuOpen(false);
+  }
+
+  return (
+    <header className="header">
+      <a className="skipLink" href="#main-content">
+        Skip to content
+      </a>
+      <Link className="wordmark" href="/" onClick={closeMenu}>
+        LEUCINE LOCK <b>DX</b>
+      </Link>
+      <button
+        aria-controls="site-navigation"
+        aria-expanded={menuOpen}
+        className="menuButton"
+        onClick={() => setMenuOpen((isOpen) => !isOpen)}
+        type="button"
+      >
+        <span>{menuOpen ? 'Close' : 'Menu'}</span>
+        <i aria-hidden="true" />
+      </button>
+      <nav
+        aria-label="Primary navigation"
+        className={menuOpen ? 'isOpen' : undefined}
+        id="site-navigation"
+      >
+        <Link href="/technology" onClick={closeMenu}>Technology</Link>
+        <Link href="/team" onClick={closeMenu}>Team</Link>
+        <a className="navCta" href={inquiryUrl} onClick={closeMenu}>Contact us</a>
+      </nav>
+    </header>
+  );
 }
 
 export function Footer() {
