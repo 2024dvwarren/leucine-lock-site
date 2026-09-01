@@ -1,7 +1,9 @@
+import Link from 'next/link';
+
 export default function Privacy() {
   return (
     <main className="legal-page">
-      <a className="back-link" href="/">← Back to LeucineLockDX</a>
+      <Link className="back-link" href="/">← Back to LeucineLockDX</Link>
       <p className="eyebrow">Your information</p>
       <h1>Privacy</h1>
       <p>
@@ -25,7 +27,7 @@ export default function Privacy() {
       <h2>Questions</h2>
       <p>
         For questions or requests concerning your information, email{' '}
-        <a href="mailto:brian@leucinelockdx.com">brian@leucinelockdx.com</a>.
+        <a href="mailto:brian@diagnosticventures.net">brian@diagnosticventures.net</a>.
       </p>
       <p>Last updated: September 1, 2026.</p>
     </main>

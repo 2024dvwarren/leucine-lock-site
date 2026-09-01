@@ -1,194 +1,26 @@
+import Link from 'next/link';
+import { Footer, Header, Molecule } from './components';
+
 export default function Home() {
-  return (
-    <main>
-      <header className="site-header">
-        <a className="brand" href="#top" aria-label="Leucine Lock DX home">
-          <img src="/leucine-lock-logo.png" alt="Leucine Lock DX Diagnostics Inc." />
-        </a>
-        <nav aria-label="Primary navigation">
-          <a href="#technology">Technology</a>
-          <a href="#company">Company</a>
-          <a href="#approach">Approach</a>
-          <a className="nav-cta" href="#contact">Start a conversation</a>
-        </nav>
-      </header>
+  return <main><Header/>
+    <section className="hero">
+      <div className="heroGlow"/><div className="heroCopy"><p className="eyebrow">A programmable biosensor platform</p><h1>Fast answers.<br/><span>Amplified by design.</span></h1><p className="lead">Leucine Lock DX is developing biosensors that combine target-specific recognition with enzyme-powered signal amplification—designed to preserve sensitivity while delivering practical results in minutes.</p><div className="actions"><Link className="button primary" href="/technology">See how it works <span>→</span></Link><a className="button ghost" href="mailto:brian@diagnosticventures.net?subject=Leucine%20Lock%20DX%20partnership">Discuss a partnership</a></div></div>
+      <Molecule/>
+    </section>
 
-      <section className="hero" id="top">
-        <div className="hero-copy">
-          <p className="eyebrow">Biosensor innovation · Since 2008</p>
-          <h1>
-            Powering sensitive
-            <span>and rapid biosensors.</span>
-          </h1>
-          <p className="hero-lede">
-            LeucineLockDX develops biotechnology and medical-device platforms
-            designed to help diagnostic teams move from signal to insight with
-            speed and precision.
-          </p>
-          <div className="hero-actions">
-            <a className="button button-primary" href="#technology">
-              Explore our technology <span aria-hidden="true">↗</span>
-            </a>
-            <a className="text-link" href="#contact">
-              Discuss a partnership <span aria-hidden="true">→</span>
-            </a>
-          </div>
-        </div>
+    <section className="band"><div><strong>10 min</strong><span>Target field-test workflow*</span></div><div><strong>10–100×</strong><span>Designed signal amplification*</span></div><div><strong>1 platform</strong><span>Color, light, or electrical readout</span></div><p>*Platform targets and company-reported development goals; performance varies by assay and requires validation.</p></section>
 
-        <div className="hero-visual" aria-label="Clinical diagnostic environment">
-          <img src="/clinical-diagnostics.jpg" alt="Clinical team working in a modern operating room" />
-          <div className="signal-card">
-            <span className="pulse" aria-hidden="true" />
-            <div>
-              <strong>Signal, amplified.</strong>
-              <small>Designed for trace-level detection</small>
-            </div>
-          </div>
-        </div>
-      </section>
+    <section className="explain section"><div className="sectionIntro"><p className="eyebrow">The core idea</p><h2>Turn target binding into a much louder signal.</h2><p>Traditional rapid tests often force a tradeoff between speed and sensitivity. The Leucine Lock platform is being engineered to address both through a molecular switch coupled to an amplifying enzyme response.</p></div><div className="flow">
+      <article><span>01</span><div className="flowIcon recognize"/><h3>Recognize</h3><p>An engineered antibody fragment is selected to bind a specific bacterium, virus, or protein analyte.</p></article>
+      <article><span>02</span><div className="flowIcon unlock"/><h3>Unlock</h3><p>Target binding changes the sensor configuration, releasing the Leucine Lock-controlled activity.</p></article>
+      <article><span>03</span><div className="flowIcon amplify"/><h3>Amplify</h3><p>The activated enzyme generates many signal molecules from one recognition event, strengthening the readout.</p></article>
+      <article><span>04</span><div className="flowIcon read"/><h3>Read</h3><p>The output can be designed as color, light, or an electrical signal—qualitative or quantitative.</p></article>
+    </div><Link className="textLink" href="/technology">Explore the complete technology story →</Link></section>
 
-      <section className="proof" aria-label="Company highlights">
-        <div className="proof-intro">
-          <span>Built for diagnostic performance</span>
-          <p>Company-reported milestones across biotechnology and medical-device development.</p>
-        </div>
-        <div className="metric">
-          <strong>15+</strong>
-          <span>years of sustained innovation</span>
-        </div>
-        <div className="metric">
-          <strong>01</strong>
-          <span>U.S. patent, with more pending</span>
-        </div>
-        <div className="metric">
-          <strong>92%</strong>
-          <span>reported platform accuracy*</span>
-        </div>
-      </section>
+    <section className="possibilities"><div><p className="eyebrow">One architecture, many possibilities</p><h2>A flexible route to rapid testing.</h2></div><div className="possibilityGrid"><article><strong>Field-ready formats</strong><p>Simple tube-based tests designed around a clear positive or negative result.</p></article><article><strong>Quantitative monitoring</strong><p>Instrument-based formats for measuring protein analytes such as insulin.</p></article><article><strong>Disease panels</strong><p>Multiplex concepts that could distinguish several respiratory targets in a single workflow.</p></article><article><strong>Tunable performance</strong><p>Kinetics, recognition chemistry, amplification, and readout can be tailored to the application.</p></article></div></section>
 
-      <section className="technology section-shell" id="technology">
-        <div className="section-heading">
-          <p className="eyebrow">The technology</p>
-          <h2>From faint biological signal to decisive information.</h2>
-          <p>
-            Our biosensor platforms bring enzyme engineering, signal amplification,
-            and practical device design together in one focused development approach.
-          </p>
-        </div>
-
-        <div className="capabilities">
-          <article className="capability capability-featured">
-            <span className="capability-number">01</span>
-            <div className="sensor-mark" aria-hidden="true">
-              <i /><i /><i /><i /><i />
-            </div>
-            <h3>Advanced sensitivity</h3>
-            <p>
-              Proprietary enzyme engineering and signal amplification are designed
-              to detect target biomolecules at trace levels.
-            </p>
-            <span className="capability-tag">Trace-level detection</span>
-          </article>
-          <article className="capability">
-            <span className="capability-number">02</span>
-            <div className="time-mark" aria-hidden="true">00:05</div>
-            <h3>Rapid response</h3>
-            <p>
-              Streamlined biochemical interactions support fast diagnostic results
-              while preserving sensitivity and specificity.
-            </p>
-            <span className="capability-tag">Results in minutes</span>
-          </article>
-          <article className="capability">
-            <span className="capability-number">03</span>
-            <div className="device-mark" aria-hidden="true"><i /><i /><i /></div>
-            <h3>Integrated devices</h3>
-            <p>
-              Compatibility and usability guide devices built to fit current
-              diagnostic ecosystems and laboratory workflows.
-            </p>
-            <span className="capability-tag">Workflow ready</span>
-          </article>
-        </div>
-        <p className="claim-note">
-          *Accuracy figure is company-reported and may vary by application and study conditions.
-        </p>
-      </section>
-
-      <section className="approach" id="approach">
-        <div className="approach-image">
-          <img src="/point-of-care-testing.jpg" alt="Point-of-care diagnostic test in a clinical setting" />
-          <span className="image-label">Point-of-care potential</span>
-        </div>
-        <div className="approach-copy">
-          <p className="eyebrow">Our approach</p>
-          <h2>Engineered around the people who need the answer.</h2>
-          <p className="approach-lede">
-            Technology only matters when it works in the real world. We develop
-            around the full diagnostic experience—from target detection to a clear,
-            repeatable result.
-          </p>
-          <ol className="steps">
-            <li><span>01</span><div><strong>Detect</strong><p>Identify biomolecules at ultra-low concentrations.</p></div></li>
-            <li><span>02</span><div><strong>Amplify</strong><p>Strengthen the biological signal with engineered chemistry.</p></div></li>
-            <li><span>03</span><div><strong>Integrate</strong><p>Translate the science into practical diagnostic devices.</p></div></li>
-          </ol>
-        </div>
-      </section>
-
-      <section className="company section-shell" id="company">
-        <div className="company-statement">
-          <p className="eyebrow">LeucineLockDX</p>
-          <h2>Innovation with a clear clinical purpose.</h2>
-        </div>
-        <div className="company-copy">
-          <p>
-            Since 2008, our team has pursued biotechnology and medical-device
-            solutions that make sensitive diagnostics faster, clearer, and more
-            useful to healthcare teams.
-          </p>
-          <p>
-            We pair scientific precision with close collaboration—working across
-            research, product development, and clinical needs to move promising
-            biosensor concepts toward real-world use.
-          </p>
-        </div>
-        <div className="values" aria-label="Company values">
-          <div><span>01</span><strong>Innovation</strong><p>Pursuing scientific breakthroughs with practical value.</p></div>
-          <div><span>02</span><strong>Precision</strong><p>Holding sensitivity, accuracy, and repeatability to a high standard.</p></div>
-          <div><span>03</span><strong>Collaboration</strong><p>Building progress with healthcare and research partners.</p></div>
-          <div><span>04</span><strong>Responsibility</strong><p>Developing with care for patients, clinicians, and communities.</p></div>
-        </div>
-      </section>
-
-      <section className="contact" id="contact">
-        <div className="contact-image">
-          <img src="/clinical-team.jpg" alt="Clinical specialists collaborating during a procedure" />
-        </div>
-        <div className="contact-panel">
-          <p className="eyebrow">Let’s collaborate</p>
-          <h2>Bring your diagnostic challenge into focus.</h2>
-          <p>
-            Talk with LeucineLockDX about biosensor technologies, custom medical-device
-            development, and partnership opportunities.
-          </p>
-          <a className="button button-light" href="mailto:brian@leucinelockdx.com">
-            brian@leucinelockdx.com <span aria-hidden="true">↗</span>
-          </a>
-          <a className="phone-link" href="tel:+18019437789">+1 801 943 7789</a>
-        </div>
-      </section>
-
-      <footer>
-        <div className="footer-brand">LEUCINE LOCK <span>DX</span></div>
-        <p>Powering sensitive and rapid biosensors.</p>
-        <div className="footer-links">
-          <a href="/legal">Legal notice</a>
-          <a href="/privacy">Privacy</a>
-          <a href="mailto:brian@leucinelockdx.com">Contact</a>
-        </div>
-        <small>© {new Date().getFullYear()} LeucineLockDX Diagnostics Inc. All rights reserved.</small>
-      </footer>
-    </main>
-  );
+    <section className="teamTeaser section"><div><p className="eyebrow">Leadership</p><h2>Built by operators, scientists, and company builders.</h2></div><p>Our leadership combines healthcare entrepreneurship, commercial execution, molecular biology, genetics, and biosensor research.</p><Link className="button primary" href="/team">Meet the team <span>→</span></Link></section>
+    <section className="contactStrip"><div><p className="eyebrow">Partners & investors</p><h2>Let’s build the next rapid test.</h2></div><a className="button light" href="mailto:brian@diagnosticventures.net?subject=Leucine%20Lock%20DX%20inquiry">Contact Brian <span>↗</span></a></section>
+    <Footer/>
+  </main>;
 }

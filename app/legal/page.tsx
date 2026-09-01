@@ -1,14 +1,16 @@
+import Link from 'next/link';
+
 export default function LegalNotice() {
   return (
     <main className="legal-page">
-      <a className="back-link" href="/">← Back to LeucineLockDX</a>
+      <Link className="back-link" href="/">← Back to LeucineLockDX</Link>
       <p className="eyebrow">Company information</p>
       <h1>Legal notice</h1>
       <h2>Site operator</h2>
       <p>LeucineLockDX Diagnostics Inc.</p>
       <h2>Contact</h2>
       <p>
-        Email: <a href="mailto:brian@leucinelockdx.com">brian@leucinelockdx.com</a><br />
+        Email: <a href="mailto:brian@diagnosticventures.net">brian@diagnosticventures.net</a><br />
         Telephone: <a href="tel:+18019437789">+1 801 943 7789</a>
       </p>
       <h2>Website information</h2>
