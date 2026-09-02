@@ -4,7 +4,7 @@ import { Footer, Header, Molecule } from './components';
 export default function Home() {
   return <main id="main-content"><Header/>
     <section className="hero">
-      <div className="heroGlow"/><div className="heroCopy"><p className="eyebrow">A programmable biosensor platform</p><h1>Fast answers.<br/><span>Amplified by design.</span></h1><p className="lead">Leucine Lock DX is developing biosensors that combine target-specific recognition with enzyme-powered signal amplification—designed to preserve sensitivity while delivering practical results in minutes.</p><div className="actions"><Link className="button primary" href="/technology">See how it works <span>→</span></Link><a className="button ghost" href="mailto:brian@diagnosticventures.net?subject=Leucine%20Lock%20DX%20partnership">Discuss a partnership</a></div></div>
+      <div className="heroGlow"/><div className="heroCopy"><p className="eyebrow">A programmable biosensor platform</p><h1>Fast answers.<br/><span>Amplified by design.</span></h1><p className="lead">Leucine Lock DX is developing biosensors that combine target-specific recognition with enzyme-powered signal amplification—designed to preserve sensitivity while delivering practical results in minutes.</p><div className="actions"><Link className="button primary" href="/technology">See how it works <span>→</span></Link><Link className="button ghost" href="/contact">Discuss a partnership</Link></div></div>
       <Molecule/>
     </section>
 
@@ -20,7 +20,7 @@ export default function Home() {
     <section className="possibilities"><div><p className="eyebrow">One architecture, many possibilities</p><h2>A flexible route to rapid testing.</h2></div><div className="possibilityGrid"><article><strong>Field-ready formats</strong><p>Simple tube-based tests designed around a clear positive or negative result.</p></article><article><strong>Quantitative monitoring</strong><p>Instrument-based formats for measuring protein analytes such as insulin.</p></article><article><strong>Disease panels</strong><p>Multiplex concepts that could distinguish several respiratory targets in a single workflow.</p></article><article><strong>Tunable performance</strong><p>Kinetics, recognition chemistry, amplification, and readout can be tailored to the application.</p></article></div></section>
 
     <section className="teamTeaser section"><div><p className="eyebrow">Leadership</p><h2>Built by operators, scientists, and company builders.</h2></div><p>Our leadership combines healthcare entrepreneurship, commercial execution, molecular biology, genetics, and biosensor research.</p><Link className="button primary" href="/team">Meet the team <span>→</span></Link></section>
-    <section className="contactStrip"><div><p className="eyebrow">Partners & investors</p><h2>Let’s build the next rapid test.</h2></div><a className="button light" href="mailto:brian@diagnosticventures.net?subject=Leucine%20Lock%20DX%20inquiry">Contact <span>↗</span></a></section>
+    <section className="contactStrip"><div><p className="eyebrow">Partners & investors</p><h2>Let’s build the next rapid test.</h2></div><Link className="button light" href="/contact">Contact <span>↗</span></Link></section>
     <Footer/>
   </main>;
 }

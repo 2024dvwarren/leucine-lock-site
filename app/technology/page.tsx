@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 import { Footer, Header, Molecule } from '../components';
 export const metadata: Metadata = { title: 'Technology', description: 'How the Leucine Lock biosensor platform converts target recognition into an amplified, flexible diagnostic readout.' };
 
@@ -12,6 +13,6 @@ export default function Technology() { return <main id="main-content"><Header/>
   </div></section>
   <section className="designSpace"><div><p className="eyebrow">Platform design space</p><h2>Tunable where the assay needs it.</h2></div><div className="designGrid"><article><b>Targets</b><span>Bacteria</span><span>Viruses</span><span>Protein analytes</span></article><article><b>Readouts</b><span>Color</span><span>Light</span><span>Electrical</span></article><article><b>Result types</b><span>Qualitative</span><span>Quantitative</span><span>Multiplex panels</span></article><article><b>Formats</b><span>Tube tests</span><span>Portable readers</span><span>Continuous monitors</span></article></div></section>
   <section className="useCases section"><div className="sectionIntro"><p className="eyebrow">Potential applications</p><h2>From a ten-minute tube test to continuous measurement.</h2><p>Platform concepts in the company deck include viral detection, respiratory disease panels, and quantitative insulin detection. Each application requires its own assay development and validation.</p></div><div className="useCaseLine"><div><span>Sample</span></div><i/><div><span>Recognition</span></div><i/><div><span>Amplification</span></div><i/><div><span>Answer</span></div></div></section>
-  <section className="contactStrip"><div><p className="eyebrow">Explore an application</p><h2>Bring us the diagnostic challenge.</h2></div><a className="button light" href="mailto:brian@diagnosticventures.net?subject=Leucine%20Lock%20technology%20inquiry">Start a conversation <span>↗</span></a></section>
+  <section className="contactStrip"><div><p className="eyebrow">Explore an application</p><h2>Bring us the diagnostic challenge.</h2></div><Link className="button light" href="/contact">Start a conversation <span>↗</span></Link></section>
   <Footer/>
 </main> }

@@ -3,9 +3,6 @@
 import Link from 'next/link';
 import { useState } from 'react';
 
-const inquiryUrl =
-  'mailto:brian@diagnosticventures.net?subject=Leucine%20Lock%20DX%20inquiry';
-
 export function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -38,14 +35,14 @@ export function Header() {
       >
         <Link href="/technology" onClick={closeMenu}>Technology</Link>
         <Link href="/team" onClick={closeMenu}>Team</Link>
-        <a className="navCta" href={inquiryUrl} onClick={closeMenu}>Contact</a>
+        <Link className="navCta" href="/contact" onClick={closeMenu}>Contact</Link>
       </nav>
     </header>
   );
 }
 
 export function Footer() {
-  return <footer><div><span className="wordmark">LEUCINE LOCK <b>DX</b></span><p>Powering sensitive and rapid biosensors.</p></div><div className="footerLinks"><Link href="/technology">Technology</Link><Link href="/team">Team</Link><a href="mailto:brian@diagnosticventures.net">Contact</a><Link href="/privacy">Privacy</Link></div><small>© {new Date().getFullYear()} LLDX, Inc. · Technology under development.</small></footer>;
+  return <footer><div><span className="wordmark">LEUCINE LOCK <b>DX</b></span><p>Powering sensitive and rapid biosensors.</p></div><div className="footerLinks"><Link href="/technology">Technology</Link><Link href="/team">Team</Link><Link href="/contact">Contact</Link><Link href="/privacy">Privacy</Link></div><small>© {new Date().getFullYear()} LLDX, Inc. · Technology under development.</small></footer>;
 }
 
 export function Molecule({ compact = false }: { compact?: boolean }) {
