@@ -104,3 +104,27 @@ body {
     padding: 14px 14px 22px;
   }
 }
+
+/* Keep the animated target centered in the receptor's binding pocket. */
+.target {
+  left: 50%;
+  margin-left: -27px;
+}
+
+.sensor {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@keyframes targetDrop {
+  0%,
+  18%,
+  100% {
+    transform: translateY(0);
+  }
+
+  45%,
+  72% {
+    transform: translateY(95px);
+  }
+}
