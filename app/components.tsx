@@ -38,7 +38,7 @@ export function Header() {
       >
         <Link href="/technology" onClick={closeMenu}>Technology</Link>
         <Link href="/team" onClick={closeMenu}>Team</Link>
-        <a className="navCta" href={inquiryUrl} onClick={closeMenu}>Contact us</a>
+        <a className="navCta" href={inquiryUrl} onClick={closeMenu}>Contact</a>
       </nav>
     </header>
   );
