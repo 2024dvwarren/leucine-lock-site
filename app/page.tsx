@@ -1,11 +1,12 @@
 import Link from 'next/link';
-import { Footer, Header, Molecule } from './components';
+import { Footer, Header } from './components';
 
 export default function Home() {
   return <main id="main-content"><Header/>
-    <section className="hero">
-      <div className="heroGlow"/><div className="heroCopy"><p className="eyebrow">A programmable biosensor platform</p><h1>Fast answers.<br/><span>Amplified by design.</span></h1><p className="lead">Leucine Lock DX is developing biosensors that combine target-specific recognition with enzyme-powered signal amplification—designed to preserve sensitivity while delivering practical results in minutes.</p><div className="actions"><Link className="button primary" href="/technology">See how it works <span>→</span></Link><Link className="button ghost" href="/contact">Discuss a partnership</Link></div></div>
-      <Molecule/>
+    <section className="brandHero" aria-labelledby="brand-hero-title">
+      <h1 className="srOnly" id="brand-hero-title">Molecular signal amplification for rapid, sensitive antigen diagnostics</h1>
+      <div className="brandHeroPhoto"><img src="/blood-sample-hero.png" alt="A gloved laboratory professional holding a blood sample tube"/></div>
+      <div className="brandHeroPanel"><img className="brandHeroArtwork" src="/leucine-lock-brand-cover.png" alt="Leucine Lock DX Diagnostics Inc. — Powering sensitive and rapid biosensors. Molecular signal amplification for rapid, sensitive antigen diagnostics."/></div>
     </section>
 
     <section className="band"><div><strong>10 min</strong><span>Target field-test workflow*</span></div><div><strong>10–100×</strong><span>Designed signal amplification*</span></div><div><strong>1 platform</strong><span>Color, light, or electrical readout</span></div><p>*Platform targets and company-reported development goals; performance varies by assay and requires validation.</p></section>
