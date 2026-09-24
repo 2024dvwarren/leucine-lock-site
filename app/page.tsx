@@ -8,11 +8,6 @@ export default function Home() {
       <Molecule/>
     </section>
 
-    <section className="brandShowcase" aria-label="Leucine Lock DX brand and laboratory sample">
-      <div className="brandShowcaseArtwork"><img src="/leucine-lock-brand-cover.png" alt="Leucine Lock DX Diagnostics Inc. — Powering sensitive and rapid biosensors. Molecular signal amplification for rapid, sensitive antigen diagnostics."/></div>
-      <div className="brandShowcasePhoto"><img src="/blood-sample-hero.png" alt="A gloved laboratory professional holding a blood sample tube"/></div>
-    </section>
-
     <section className="band"><div><strong>10 min</strong><span>Target field-test workflow*</span></div><div><strong>10–100×</strong><span>Designed signal amplification*</span></div><div><strong>1 platform</strong><span>Color, light, or electrical readout</span></div><p>*Platform targets and company-reported development goals; performance varies by assay and requires validation.</p></section>
 
     <section className="explain section"><div className="sectionIntro"><p className="eyebrow">The core idea</p><h2>Turn target binding into a much louder signal.</h2><p>Traditional rapid tests often force a tradeoff between speed and sensitivity. The Leucine Lock platform is being engineered to address both through a molecular switch coupled to an amplifying enzyme response.</p></div><div className="flow">
