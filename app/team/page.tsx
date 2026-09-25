@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { Footer, Header } from '../components';
 export const metadata: Metadata = { title: 'Leadership Team', description: 'Meet the leadership team behind Leucine Lock DX.' };
 const team = [
-  {name:'Brian Bentley', role:'Chief Executive Officer', image:'/team-brian.png', facts:['Serial healthcare entrepreneur with 25+ years in healthcare and life sciences','Leads venture formation, commercialization strategy, and capital development','Experienced company builder for diagnostic businesses']},
+  {name:'Brian Bentley', role:'Chief Executive Officer', image:'/team-brian.jpg', facts:['Serial healthcare entrepreneur with 25+ years in healthcare and life sciences','Leads venture formation, commercialization strategy, and capital development','Experienced company builder for diagnostic businesses']},
   {name:'Devin Connor', role:'President', image:'/team-devin.png', facts:['Healthcare executive with 18+ years spanning operations and commercial strategy','Experience in product development and scaling diagnostic and life-science businesses','Leads execution and go-to-market strategy']},
   {name:'Dr. Jonathon Hill, PhD', role:'VP, Science & Technology', image:'/team-jonathon.jpeg', facts:['Inventor of the Leucine Lock platform; BYU associate professor and Fulbright Scholar','Expertise in protein engineering, molecular genetics, structural biology, bioinformatics, and liquid biopsy','Previous co-founder and board member']}
 ];

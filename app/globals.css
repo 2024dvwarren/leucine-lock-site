@@ -36,3 +36,7 @@
 .impactCallout p{color:#c5d2e2;line-height:1.65;margin:0;max-width:900px}
 @media(max-width:900px){.deepDiveHeading{grid-template-columns:1fr}.componentGrid,.amplificationSteps{grid-template-columns:1fr}.componentGrid article,.componentGrid article:first-child,.componentGrid article:last-child{border-left:0;border-top:1px solid var(--line);padding:28px 0}.amplificationSteps article,.amplificationSteps article+article{padding:28px 0}}
 @media(max-width:560px){.deepDive{padding-left:22px;padding-right:22px}.deepDiveVisual{border-radius:16px;margin-top:45px}.designLogic,.impactCallout{grid-template-columns:1fr}}
+
+/* Circular leadership portraits */
+.portrait{border-radius:50%}
+.portrait span{bottom:10%;left:10%;padding:10px}
