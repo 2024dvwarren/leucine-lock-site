@@ -8,7 +8,7 @@ export default function Home() {
       <Molecule/>
     </section>
 
-    <section className="band"><div><strong>10 min</strong><span>Target field-test workflow*</span></div><div><strong>10–100×</strong><span>Designed signal amplification*</span></div><div><strong>1 platform</strong><span>Color, light, or electrical readout</span></div><p>*Platform targets and company-reported development goals; performance varies by assay and requires validation.</p></section>
+    <section className="band"><div><strong>10–15 min</strong><span>Target field-test workflow*</span></div><div><strong>10–100×</strong><span>Designed signal amplification*</span></div><div><strong>1 platform</strong><span>Color, light, or electrical readout</span></div><p>*Platform targets and company-reported development goals; performance varies by assay and requires validation.</p></section>
 
     <section className="explain section"><div className="sectionIntro"><p className="eyebrow">The core idea</p><h2>Turn target binding into a much louder signal.</h2><p>Traditional rapid tests often force a tradeoff between speed and sensitivity. The Leucine Lock platform is being engineered to address both through a molecular switch coupled to an amplifying enzyme response.</p></div><div className="flow">
       <article><span>01</span><div className="flowIcon recognize"/><h3>Recognize</h3><p>An engineered antibody fragment is selected to bind a specific bacterium, virus, or protein analyte.</p></article>
