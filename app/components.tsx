@@ -15,9 +15,7 @@ export function Header() {
       <a className="skipLink" href="#main-content">
         Skip to content
       </a>
-      <Link className="siteLogo" href="/" onClick={closeMenu} aria-label="Leucine Lock DX home">
-        <img src="/leucine-lock-dx-logo.png" alt="Leucine Lock DX Diagnostics Inc." />
-      </Link>
+      <Link className="siteLogo" href="/" onClick={closeMenu} aria-label="Leucine Lock DX home" />
       <button
         aria-controls="site-navigation"
         aria-expanded={menuOpen}
